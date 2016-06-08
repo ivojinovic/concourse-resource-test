@@ -34,9 +34,9 @@ fly -t savannah builds -j jarvis_api/isolation-tests-master-branch > t4.txt
 curl -H "Accept:application/json" --user $jiracreds https://jira.zipcar.com/rest/api/2/search?jql=project=ZC%20and%20resolution=Done%20and%20assignee=ivojinovic > t5.txt
 
 jq -n '{
-  "version": { "ref": "v007" },
+  "version": { "ref": "v008" },
   "metadata": [
-    { "name": "commit", "value": "v007" },
+    { "name": "commit", "value": "v008" },
     { "name": "author", "value": "Ivan Vojinovic" }
   ]
 }' >&3
